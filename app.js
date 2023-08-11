@@ -35,7 +35,7 @@ window.addEventListener('load', () => {
 })
 
 function DisplayTodos () {
-	const todoList = document.querySelector('#todo-list');
+	const todoList = document.querySelector('#lists');
 	todoList.innerHTML = "";
 
 	todos.forEach(todo => {

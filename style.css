@@ -163,7 +163,7 @@ input:checked ~ .bubble::after {
     margin: 1rem 0;  
 }
 
-.lists {
+.lists .todo-item {
     display: flex;
 	align-items: center;
 	background-color: #FFF;
@@ -184,7 +184,7 @@ input:checked ~ .bubble::after {
 }
 
 .todo-item .todo-content input {
-	color: var(--dark);
+	color: #313154;
 	font-size: 1.125rem;
 }
 
@@ -208,14 +208,14 @@ input:checked ~ .bubble::after {
 
 .todo-item .actions .edit {
 	margin-right: 0.5rem;
-	background-color: var(--primary);
+	background-color: #EA40A4;
 }
 
 .todo-item .actions .delete {
-	background-color: var(--danger);
+	background-color:#ff5b57;
 }
 
 .todo-item.done .todo-content input {
 	text-decoration: line-through;
-	color: var(--grey);
+	color: #888;
 }
