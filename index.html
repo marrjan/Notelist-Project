@@ -6,9 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteList</title>
     <link rel="icon" href="img/images.png">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- main start -->
+    <div class="main">
+       <!-- start first section -->
+       <div>
+        <section class="first-section">
+            <h2 class="title">
+                What's up , 
+                <input type="text" id="name" placeholder="Your name ..">
+            </h2>
+        </section>
+       </div>
+        <!-- end first section -->
+
+        <!-- start second section -->
+         <div>
+            <section class="note-list">
+              <h3>Create Your NoteList</h3>
+              <form class="form-list">
+                <h4>What's Your note ?</h4>
+                <input type="text" placeholder="I am very Happy today" name="content" id="content">
+                <h4>Choose Your category</h4>
+
+                <div class="two-option">
+                <label>
+                    <input type="radio" name="category" id="one-category" value="Business">
+                    <span class="bubble business"></span>
+                    <div>Business</div>
+                </label>
+                <label>
+                    <input type="radio" name="category" id="two-category" value="Personal">
+                    <span class="bubble personal"></span>
+                    <div>Personal</div>
+                </label>
+                </div>
+                    <input type="submit" value="Add Note">
+              </form>
+            </section>
+         </div>
+         <!-- end second section -->
+
+         <!-- start third section -->
+            <div>
+                <section class="lists">
+                 <h3>Note List</h3>
+                 <div class="list" id="lists"></div>
+                </section>
+            </div>
+            <!-- end third section -->
+    </div>
+    <!-- main end -->
+
+    <!-- js import -->
+    <script src="app.js"></script>
+    <!-- end js import -->
 </body>
 </html>
