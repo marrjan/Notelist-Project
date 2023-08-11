@@ -6,3 +6,67 @@
     font-family: poppins;
 }
 
+input:not([type="radio"]):not([type="checkbox"]), button{
+    appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: initial;
+}
+
+body {
+    background: #EEE;
+    color:  #888;
+}
+
+section {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+h3 {
+	color: #888;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+
+
+h4 {
+	color: #888;
+	font-size: 0.875rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.first-section .title {
+    display: flex;
+}
+
+.first-section .title input{
+    margin-left: 0.5rem;
+	flex: 1 1 0%;
+	min-width: 0;
+}
+
+.first-section .title ,
+.first-section .title input {
+    color: #888;
+    font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.note-list input[type="text"] {
+    display: block;
+	width: 100%;
+	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
+	color: #888;
+	background-color: #FFF;
+	border-radius: 0.5rem;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1.5rem;
+}
+
