@@ -10,44 +10,51 @@
 </head>
 <body>
     <!-- header start -->
-    
-    <section class="create-todo">
+    <div class="header">
+    <section class="section-one">
         <div><img class="logo" src="img/logo.png" alt=""></div>
-        <form id="new-todo-form">
+        <h2 class="title">
+            What's up, <input type="text" id="name" placeholder="Your Name .." />
+        </h2>
+    </section>
+    </div>
+    <div class="main">
+    <section class="section-two">
+        <form id="form-list">
             <h4>What's on your todo?</h4>
             <input 
                 type="text" 
-                placeholder="e.g. Get some milk"
+                placeholder="Enter your Note .."
                 name="content"
                 id="content" />
             
             <h4>Pick a category</h4>
             <div class="options">
                 <label>
-                    <input type="radio" name="category" id="category1" value="business" /> 
+                    <input type="radio" name="category" id="category-one" value="business" /> 
                     <span class="bubble business"></span>
                     <div>Business</div>
                 </label>
                 <label>
-                    <input type="radio" name="category" id="category2" value="personal" />
+                    <input type="radio" name="category" id="category-two" value="personal" />
                     <span class="bubble personal"></span>
                     <div>Personal</div>
                 </label>
             </div>
 
-            <input type="submit" value="Add todo" />
+            <input type="submit" value="Add Your Not" />
         </form>
     </section>
     <!-- End of New Todo -->
 
     <!-- Todo List -->
-    <section class="todo-list">
+    <section class="lists">
         <h3>TODO LIST</h3>
         <div class="list" id="todo-list"></div>
     </section>
     <!-- End of Todo List -->
 
-</main>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

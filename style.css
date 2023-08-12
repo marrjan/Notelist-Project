@@ -2,7 +2,7 @@
 :root {
 	--box-one: #65e7f8;
 	--box-two: #c94dfa;
-	--light: #e7e3e3;
+	--light: #ffffff;
 	--grey: #1f1f1f;
 	--dark: #000000;
     --positive:#b355d8;
@@ -16,9 +16,7 @@
 
 }
 
-body{
-    background-color: #ffffff;
-}
+
 /* input */
 input:not([type="radio"]):not([type="checkbox"]) {
 	appearance: none;
@@ -35,7 +33,7 @@ body {
 }
 
 section {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	margin-bottom: 2rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -55,49 +53,55 @@ h4 {
 	margin-bottom: 0.5rem;
 }
 
-.greeting .title {
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.section-one .title {
 	display: flex;
 
 }
 
-.greeting .title input {
+
+.section-one .title input {
 	margin-left: 0.5rem;
 	flex: 1 1 0%;
 	min-width: 0;
 }
 
-.greeting .title, 
-.greeting .title input {
+.section-one .title, 
+.section-one .title input {
 	color: var(--dark);
 	font-size: 1.5rem;
 	font-weight: 700;
 }
 
-.create-todo input[type="text"] {
+.section-two input[type="text"] {
 	display: block;
 	width: 100%;
 	font-size: 1.125rem;
 	padding: 1rem 1.5rem;
 	color: var(--dark);
-	background-color: #FFF;
+	background-color: #f3f3f3;
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow);
 	margin-bottom: 1.5rem;
 }
 
-.create-todo .options {
+.section-two .options {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1rem;
 	margin-bottom: 1.5rem;
 }
 
-.create-todo .options label {
+.section-two .options label {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #FFF;
+	background-color: #f3f3f3;
 	padding: 1.5rem;
 	box-shadow: var(--shadow);
 	border-radius: 0.5rem;
@@ -148,18 +152,18 @@ input:checked ~ .bubble::after {
 	opacity: 1;
 }
 
-.create-todo .options label div {
+.section-two .options label div {
 	color: var(--dark);
 	font-size: 1.125rem;
 	margin-top: 1rem;
 }
 
-.create-todo input[type="submit"] {
+.section-two input[type="submit"] {
 	display: block;
 	width: 100%;
 	font-size: 1.125rem;
 	padding: 1rem 1.5rem;
-	color: #FFF;
+	color: #ffffff;
 	font-weight: 700;
 	text-transform: uppercase;
 	background-color: var(--box-two);
@@ -169,10 +173,10 @@ input:checked ~ .bubble::after {
 	transition: 0.2s ease-out;
 }
 
-.create-todo input[type="submit"]:hover {
+.section-two input[type="submit"]:hover {
 	opacity: 0.75;
 }
 
-.todo-list .list {
+.lists .list {
 	margin: 1rem 0;
 }
