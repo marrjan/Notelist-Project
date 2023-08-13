@@ -7,15 +7,21 @@
     <title>NoteList</title>
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/brands.css">
 </head>
 <body>
     <!-- header start -->
     <div class="header">
     <section class="section-one">
         <div><img class="logo" src="img/logo.png" alt=""></div>
+        <div class="your-note"><p>Your Note</p></div>
+        <div>
         <h2 class="title">
             What's up, <input type="text" id="name" placeholder="Your Name .." />
         </h2>
+        </div>
     </section>
     </div>
     <!-- header end -->
@@ -23,14 +29,18 @@
     <div class="main">
     <section class="section-two">
         <form id="form-list">
-            <h4>What's on your todo?</h4>
+            <div class="input-search">
+                <input type="text" placeholder="Search your notes" id="filter">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- <h4>What's your note ?</h4>
             <input 
                 type="text" 
                 placeholder="Enter your Note .."
                 name="content"
-                id="content" />
+                id="content" /> -->
             
-            <h4>Pick a category</h4>
+            <h4>choose a category</h4>
             <div class="options">
                 <label>
                     <input type="radio" name="category" id="category-one" value="business" /> 
@@ -54,11 +64,57 @@
    <!-- footer start -->
     <div class="footer">
     <section class="lists">
-        <h3>TODO LIST</h3>
+        <h3>Note List</h3>
         <div class="list" id="todo-list"></div>
+    </section>
+
+    <section class="icon">
+        <div class="tabs">
+            <div class="add">
+                <i class="fa-solid fa-plus" id="add_note"></i>
+            </div>
+        </div>
     </section>
     </div>
     <!-- footer end -->
+
+    <!-- new tab -->
+    <div class="container">
+        <div class="content">
+            <div class="return" id="return">
+                <i class="fa-solid fa-circle-left"></i>
+            </div>
+            <div class="eInput">
+                <input type="text" placeholder="Header Title" id="title">
+            </div>
+            <div class="input">
+                <textarea name="" id="text-field" cols="30" rows="10" placeholder="Place note here"></textarea>
+                <button id="submit">Save</button>
+            </div>
+            <div class="select">
+                <div class="select_content">
+                    <div class="c1">
+                        <div class="categories" id="s1">Design</div>
+                        <div class="categories" id="s2">Networing</div>
+                        <div class="categories" id="s3">Student</div>
+                    </div>
+                    <div class="add_cat">
+                        <div class="cat_input">
+                            <input type="text" placeholder="Add your category" id="input2">
+                        </div>
+                    </div>
+                    <div class="colors">
+                        <div class="color-tab">
+                            <div class="color_set red" id="red"></div>
+                            <div class="color_set blue" id="blue"></div>
+                            <div class="color_set green" id="green"></div>
+                            <div class="color_set purple" id="purple"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
