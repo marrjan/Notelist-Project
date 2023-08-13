@@ -32,7 +32,7 @@ body {
 	background: var(--light);
 	color: var(--dark);
 }
-
+  
 .header {
 	display: flex;
 	justify-content: center;
@@ -50,7 +50,7 @@ h3 {
 	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 0.5rem;
-	margin-left: 100px;
+	margin-left: 2px;
 }
 
 h4 {
@@ -123,18 +123,7 @@ h4 {
 	box-shadow: var(--shadow);
 	margin-bottom: 15px;
 }
-/* 
-/* 
-.input-search {
-	/* max-width: 500px; */
-	
-	
- */
-/* 
-.input-search input {
-	
-	
-} */ */
+
 
 .input-search input::placeholder{
 	padding-left: 19px;
@@ -142,11 +131,11 @@ h4 {
 }
 
 .input-search i{
-	/* position: absolute;
+	 position: absolute;
 	top: 205px;
-	left: 220px; */
+	left: 220px;
 	color: var(--box-two);
-	/* padding-right: 19px; */
+	padding-right: 19px; 
 	position: relative;
 	bottom: 56px;
 	left: 9px;
@@ -245,40 +234,15 @@ input:checked ~ .bubble::after {
 
 .lists .list {
 	margin: 1rem 0;
-}
+} 
 
+    
 .footer {
 	display: flex;
 	justify-content: center;
 	
-}
+} 
 
-.tabs{
-	
-    width: 100px;
-   position: relative;
-    padding: 60px;
-    border-radius: 20px;
-    
-
-   
-}
-
-.tabs .add i{
-	position: absolute;
-	bottom: 80px;
-	right: 90px;
-    color: var(--box-two);
-    width: 50px;
-    height: 50px;
-    background: var(--box-one);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.4em;
-    /* float: right; */
-    cursor: pointer;
-}
 
 .notes-list{
 	background-color: var(--box-one);
@@ -286,6 +250,7 @@ input:checked ~ .bubble::after {
 
 
 .container{
+	max-width: 1700px;
 	margin: 50px;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 265px);
@@ -297,7 +262,7 @@ input:checked ~ .bubble::after {
 	display: flex;
 	flex-direction: column;
 	height: 250px;
-	background-color: var(--light);
+	background-color: var(--box-one);
 	border-radius: 5px;
 	padding: 15px 20px 20px;
 	
@@ -472,4 +437,4 @@ form .row label{
 .mybox.show , .mybox.show .boxes{
 	opacity: 1;
 	pointer-events: auto;
-}
+} 
