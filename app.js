@@ -1,3 +1,4 @@
+// js code
 const addBox = document.querySelector(".add");
 myBox = document.querySelector(".mybox");
 Icon = myBox.querySelector("header i");
