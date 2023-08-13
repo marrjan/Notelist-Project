@@ -123,18 +123,18 @@ h4 {
 	box-shadow: var(--shadow);
 	margin-bottom: 15px;
 }
-
-
+/* 
+/* 
 .input-search {
 	/* max-width: 500px; */
 	
 	
-}
+ */
 /* 
 .input-search input {
 	
 	
-} */
+} */ */
 
 .input-search input::placeholder{
 	padding-left: 19px;
@@ -369,6 +369,7 @@ input:checked ~ .bubble::after {
 	top: 0;
 	left: 0;
 	height: 100%;
+	z-index: 2;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.15);
 }
@@ -378,9 +379,10 @@ input:checked ~ .bubble::after {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	z-index: 2;
+	z-index: 3;
 	max-width: 400px;
 	width: 100%;
+	justify-content: center;
 	transform: translate(-50%, -50%);
 }
 
@@ -388,6 +390,13 @@ input:checked ~ .bubble::after {
 .boxes .content{
 	background: var(--light);
 	border-radius: 6px;
+	width: calc(100% - 15px);
+}
+
+.boxes{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .boxes .content header{
@@ -416,7 +425,45 @@ input:checked ~ .bubble::after {
 	margin: 15px 25px 36px;
 }
 
-.content form input{
+.content form :where(input, textarea){
 	width: 100%;
+	height: 50px;
+	font-size: 17px;
+	padding: 0 15px;
+	border: 1px solid #999;
+	border-radius: 5px;
+	outline: none;
 }
 
+.content form .row{
+	margin-bottom: 20px;
+}
+
+form .row label{
+	display: block;
+	font-size: 18px;
+	margin-bottom: 7px;
+}
+
+.content form textarea{
+	height: 150px;
+	resize: none;
+	padding: 8px 15px;
+}
+
+.content form button{
+	width: 100%;
+	height: 50px;
+	background-color: var(--box-two);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 17px;
+	border-radius: 7px;
+	color: var(--light);
+}
+
+.mybox , .mybox .boxes{
+	opacity: 0;
+	pointer-events: none;
+}
