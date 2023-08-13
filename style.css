@@ -6,7 +6,7 @@
 	--grey: #1f1f1f;
 	--dark: #000000;
     --positive:#b355d8;
-    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow: 0 0px 6px rgba(0, 0, 0, 0.15);
 }
 * {
     margin: 0;
@@ -19,7 +19,7 @@
 
 
 /* input */
-input:not([type="radio"]):not([type="checkbox"]) {
+.myinput {
 	appearance: none;
 	border: none;
 	outline: none;
@@ -310,6 +310,7 @@ input:checked ~ .bubble::after {
   justify-content: space-between;
   border-top: 1px solid #ccc;
   padding-top: 10px;
+  position: relative;
 }
 
 .settings p {
@@ -321,5 +322,101 @@ input:checked ~ .bubble::after {
 	color: var(--grey);
 	font-size: 16px;
 	cursor: pointer;
+}
+
+.settings .menu{
+	position: absolute;
+	bottom: 0;
+	top: 20px;
+	right: 20px;
+	background-color: var(--light);
+	width: 100px;
+	height: 80px;
+    padding: 5px 0;
+	border-radius: 4px;
+	box-shadow: var(--shadow);
+	transform: scale(0);
+	transform-origin: bottom r;
+	transition: transform 0.2s ease;
+}
+
+.settings:hover .menu{
+	transform: scale(1);
+}
+
+.settings .menu li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  height: 25px;
+  padding: 17px 15px;
+  cursor: pointer;
+  border-radius: 0;
+  justify-content: flex-start;
+}
+
+.menu li:hover{
+	background: #f5f5f5;
+}
+
+.menu li i{
+	padding-right: 8px;
+}
+
+.mybox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.15);
+}
+
+
+.mybox .boxes{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	max-width: 400px;
+	width: 100%;
+	transform: translate(-50%, -50%);
+}
+
+
+.boxes .content{
+	background: var(--light);
+	border-radius: 6px;
+}
+
+.boxes .content header{
+	padding: 15px 25px;
+	border-bottom: 1px solid #ccc;
+}
+
+.content header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content header p{
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.content header i {
+	color:var(--grey);
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.content form{
+	margin: 15px 25px 36px;
+}
+
+.content form input{
+	width: 100%;
 }
 
