@@ -279,3 +279,22 @@ input:checked ~ .bubble::after {
     cursor: pointer;
 }
 
+.notes-list{
+	background-color: var(--box-one);
+}
+
+.container{
+	margin: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 265px);
+	gap: 15px;
+	padding-top: 40px;
+}
+
+.container .title-one{
+	height: 250px;
+	background-color: var(--light);
+	border-radius: 5px;
+	padding: 15px 20px 20px;
+	
+}
