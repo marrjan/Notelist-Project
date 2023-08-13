@@ -27,6 +27,11 @@
 	cursor: initial;
 }
 
+@font-face{
+	src: url(fonts/Yekan.ttf);
+	font-family: yekan;
+}
+
 
 body {
 	background: var(--light);
