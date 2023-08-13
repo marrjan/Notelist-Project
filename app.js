@@ -19,6 +19,7 @@ Icon.addEventListener("click" , () => {
 );
 
 function showNote(params) {
+    document.querySelectorAll(".note").forEach(note.remove());
     notes.forEach((note) => {
         let divTag = `<div class ="container"><div class="title-one">
         <p>${note.title}</p>

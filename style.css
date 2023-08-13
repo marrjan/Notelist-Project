@@ -36,6 +36,7 @@ body {
 .header {
 	display: flex;
 	justify-content: center;
+	
 }
 
 section {
@@ -90,6 +91,7 @@ h4 {
 .main{
 	display: flex;
 	justify-content: center;
+	
 }
 
 .section-one .title {
@@ -131,8 +133,7 @@ h4 {
 }
 
 .input-search i{
-	 position: absolute;
-	top: 205px;
+	 position: absolute;;
 	left: 220px;
 	color: var(--box-two);
 	padding-right: 19px; 
@@ -231,17 +232,11 @@ input:checked ~ .bubble::after {
 .section-two input[type="submit"]:hover {
 	opacity: 0.75;
 }
-
+/* 
 .lists .list {
 	margin: 1rem 0;
-} 
+}  */
 
-    
-.footer {
-	display: flex;
-	justify-content: center;
-	
-} 
 
 
 .notes-list{
@@ -249,16 +244,41 @@ input:checked ~ .bubble::after {
 }
 
 
-.container{
-	max-width: 1700px;
-	margin: 50px;
+
+.container, .add{
+	/* max-width: 1700px; */
+	/* margin: 50px; */
+	margin-left: 50px;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 265px);
 	gap: 15px;
-	padding-top: 40px;
 }
 
-.container .title-one{
+.add , .icon{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.add .icon{
+	height: 78px;
+	width: 78px;
+	border: 2px solid var(--box-two);
+	border-radius: 50%;
+	color: #b355d8;
+	font-size: 40px;
+}
+
+.add p {
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--grey);
+
+}
+
+.container .title-one {
 	display: flex;
 	flex-direction: column;
 	height: 250px;
