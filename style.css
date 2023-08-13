@@ -466,4 +466,10 @@ form .row label{
 .mybox , .mybox .boxes{
 	opacity: 0;
 	pointer-events: none;
+	transition: all 0.25s ease;
+}
+
+.mybox.show , .mybox.show .boxes{
+	opacity: 1;
+	pointer-events: auto;
 }
