@@ -23,10 +23,7 @@ const username = localStorage.getItem('username') || '';
 
 
 
-
-
-
-addBox.addEventListener("click" , () => {
+addBox.addEventListener("click", () => {
     myBox.classList.add("show");
 }
 );
