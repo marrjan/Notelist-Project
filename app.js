@@ -11,7 +11,7 @@ const months = ["january","February","March","April","May","June","July","August
 
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
 
-let isUpdate = false, updateId;
+
 
 // dont change the name
 const nameInput = document.querySelector(".myinput");
@@ -44,8 +44,8 @@ function showNote(params) {
             <p>${note.date}</p>
             <i class="fa-solid fa-ellipsis"></i>
             <ul class="menu">
-                <li"><i class="fa-solid fa-pen"></i>Edit</li>
-                <li"><i class="fa-solid fa-trash-can"></i>Delete</li>
+                <li><i class="fa-solid fa-pen"></i>Edit</li>
+                <li><i class="fa-solid fa-trash-can"></i>Delete</li>
             </ul>
         </div>
     </div>
@@ -83,4 +83,11 @@ addButton.addEventListener("click" , (e) => {
     } 
 }
 )
+
 });
+function darkMood() {
+    let setTheme = document.body;
+    
+    setTheme.classList.toggle("dark-mood");
+}
+
