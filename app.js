@@ -1,4 +1,5 @@
 // js code
+window.addEventListener('load' , () => {
 const addBox = document.querySelector(".add");
 myBox = document.querySelector(".mybox");
 Icon = myBox.querySelector("header i");
@@ -9,6 +10,21 @@ addButton = myBox.querySelector("button");
 const months = ["january","February","March","April","May","June","July","August","September","October","November","December"]
 
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
+
+// dont change the name
+const nameInput = document.querySelector(".myinput");
+const username = localStorage.getItem('username') || '';
+
+	nameInput.value = username;
+
+	nameInput.addEventListener('change', (e) => {
+		localStorage.setItem('username', e.target.value);
+	})
+
+
+
+
+
 
 addBox.addEventListener("click" , () => {
     myBox.classList.add("show");
@@ -59,7 +75,11 @@ addButton.addEventListener("click" , (e) => {
         localStorage.setItem("notes" , JSON.stringify(notes));
         Icon.click();
         showNote();
-    }
-   
+
+
+
+
+    } 
 }
-);
+)
+});
