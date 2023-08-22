@@ -61,18 +61,26 @@ h4 {
 	display: flex;
 	justify-content: center;
 	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+
 }
 
+.header{
+	display: flex;
+	flex-direction: column;
+}
 	
 .header button{
+	margin-top: 5px;
 	padding: 10px 15px;
-	position: absolute;
+	/* position: absolute;
 	left: 600px;
-	top: 20px;
+	top: 20px; */
 	border: none;
 	border-radius: 10px;
-	background-color: var(--dark);
-	color: var(--light);
+	background-color: var(--box-one);
+	color: var(--dark);
     font-size: 17px;
 	font-weight: 700;
 	cursor: pointer;
@@ -89,12 +97,14 @@ h4 {
     width: 80px;
     height: 80px;
     display: inline-flex;
+	margin-top: 10px;
 }
 
 .your-note {
     display: flex;
     justify-content: center;
     position: relative;
+	margin-top: 10px;
 
 }
 
@@ -141,6 +151,7 @@ h4 {
 	display: flex;
 	justify-content: center;
 	
+	
 }
 
 .input-search{
@@ -150,15 +161,16 @@ h4 {
     padding: 10px;
 	margin-top: 30px;
 	margin-bottom: 20px;
+	display: flex;
 }
 
 
 .section-two input[type="text"] {
     background: #f0f0f1;
     border: none;
+	flex: 1 1 0%;
     outline: none;
     width: 590px;
-	flex: 1 1 0%;
     font-size: 20px;
 	padding: 14px 15px;
 	
@@ -169,6 +181,7 @@ h4 {
 	color: var(--box-two);
 	font-size: 20px;
 	cursor: pointer; 
+	margin-top: 19px;
 }
 	
 
@@ -401,7 +414,9 @@ form .row label{
 }
 /* section four end */
 .containerr{
-	margin: 0 auto;
-	max-width: 900px;
+	margin: 0 auto;	
+	max-width: 1500px;
 }
+
+
 
