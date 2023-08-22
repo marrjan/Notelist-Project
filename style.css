@@ -155,22 +155,25 @@ h4 {
 }
 
 .input-search{
+	display: flex;
+	width: 150%;
 	background: #f0f0f1;
     border-radius: 20px;
     color: rgb(141, 139, 139);
     padding: 10px;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	display: flex;
+	position: relative;
+	right: 100px;
+
+	
 }
 
 
 .section-two input[type="text"] {
     background: #f0f0f1;
     border: none;
-	flex: 1 1 0%;
     outline: none;
-    width: 590px;
     font-size: 20px;
 	padding: 14px 15px;
 	
